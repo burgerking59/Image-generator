@@ -1,33 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Noughts and Crosses</title>
+    <link rel="stylesheet" href="NandCstyle.css">
+    <script src="NandCscript.js"></script>
 </head>
-<body>
 
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body onload="load()">
+    <div id="board">
+        <button id="00" class="NCbtn" onclick="press(this, 0, 0)"></button>
+        <button id="01" class="NCbtn" onclick="press(this, 0, 1)"></button>
+        <button id="02" class="NCbtn" onclick="press(this, 0, 2)"></button>
+        <br>
+        <button id="10" class="NCbtn" onclick="press(this, 1, 0)"></button>
+        <button id="11" class="NCbtn" onclick="press(this, 1, 1)"></button>
+        <button id="12" class="NCbtn" onclick="press(this, 1, 2)"></button>
+        <br>
+        <button id="20" class="NCbtn" onclick="press(this, 2, 0)"></button>
+        <button id="21" class="NCbtn" onclick="press(this, 2, 1)"></button>
+        <button id="22" class="NCbtn" onclick="press(this, 2, 2)"></button>
+    </div>
 </body>
-</html>
