@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Noughts and Crosses</title>
-    <link rel="stylesheet" href="NandCstyle.css">
-    <script src="NandCscript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Image generator</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
-<body onload="load()">
-    <div id="board">
-        <button id="00" class="NCbtn" onclick="press(this, 0, 0)"></button>
-        <button id="01" class="NCbtn" onclick="press(this, 0, 1)"></button>
-        <button id="02" class="NCbtn" onclick="press(this, 0, 2)"></button>
-        <br>
-        <button id="10" class="NCbtn" onclick="press(this, 1, 0)"></button>
-        <button id="11" class="NCbtn" onclick="press(this, 1, 1)"></button>
-        <button id="12" class="NCbtn" onclick="press(this, 1, 2)"></button>
-        <br>
-        <button id="20" class="NCbtn" onclick="press(this, 2, 0)"></button>
-        <button id="21" class="NCbtn" onclick="press(this, 2, 1)"></button>
-        <button id="22" class="NCbtn" onclick="press(this, 2, 2)"></button>
+<body onload="load();">
+    <button onclick="randomize()">Randomize</button>
+    <div id="area" class="area">
     </div>
 </body>
