@@ -6,5 +6,11 @@
 
 .area {
     display: flex;
+    margin-right: 10px;
+    width: 80px;
+}
+
+.outerArea {
+    display: flex;
     margin-bottom: 10px;
 }
